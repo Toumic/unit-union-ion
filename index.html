@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Unit Union Ion</title>
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <script type="text/javascript" src="jss/racine.js"></script>
+</head>
+<body>
+<H1>Union ions premiers</H1>
+<p>
+    Applications connues ou inconnues élevées en <b>Javascript</b>.<br>
+    <i>Les fonctions vues de l'intérieur</i><br>
+    ________________________________________________</p>
+<H2>La racine carrée d'un nombre :</H2>
+<p>Incrémenter l'exposant produisant le nombre juste.<br>
+ - Le résultat réel attendu est absent, il semble tronqué.</p>
+<button onclick="transit();">Racine carrée</button>
+<script>
+    let retourCarre = ""
+    function transit() {
+        let aSaisi = prompt("Entrez un nombre");
+        while (aSaisi === "0" || aSaisi === "") {
+            aSaisi = prompt("Entrez un nombre");
+        }
+        let wiNew = window.open();
+        wiNew.document.write("Origine : ", aSaisi, "<br>")
+        parseFloat(aSaisi)
+        retourCarre = racine2(aSaisi)
+        wiNew.document.write("Retour Carré : ", retourCarre.toString(), "<br>")
+    }
+</script>
+<p>________________________________________________</p>
+<H2>La puissance relative :</H2>
+<p>Exponentiation d'un nombre pour égaler un autre nombre.</p>
+<button onclick="expose();">Puissance relative</button>
+<script>
+    let retourPuis = ""
+    function expose(){
+        let prise1 = prompt("Entrez un 1er nombre");
+        while (prise1 === "0" || prise1 === "") {
+            prise1 = prompt("Entrez un 1er nombre");
+        }
+        let prise2 = prompt("Entrez un 2ème nombre");
+        while (prise2 === "0" || prise2 === "") {
+            prise2 = prompt("Entrez un 2ème nombre");
+        }
+        let wiNew1 = window.open();
+        wiNew1.document.write("Un : ", prise1, " Deux : ", prise2, "<br>")
+        retourPuis = explore(prise1, prise2)
+        wiNew1.document.write("Retour Puissance : ", retourPuis.toString(), "<br>")
+    }
+</script>
+<p>________________________________________________</p>
+</body>
+</html>
