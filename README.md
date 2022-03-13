@@ -1,3 +1,3 @@
-# Bienvenue dans U-U-I!
+# Bienvenue dans UUI!
 
 © Toumic
