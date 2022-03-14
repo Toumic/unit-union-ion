@@ -1,7 +1,7 @@
 // Javascript Racine carrée du nombre initial
 // Résultat insatisfaisant du résultat des décimales
-function racine2(choix, aSaisi) {
-    // document.write("Début : ", aSaisi, "  ", "<br>");
+function racine2(aSaisi) {
+    let win0 = window.open()
     let a1 = parseFloat(aSaisi);
     // let racineProche = 0 ;
     // Trouver le nombre entier de l'exposant
@@ -28,12 +28,12 @@ function racine2(choix, aSaisi) {
                 if (expRes < a1) {
                     let derCar = expRac.slice(-1);
                     if (derCar === "9") break;
-                    document.write("Inférieur: ", derCar, " _expRac_ ", expRac, " expRes ", expRes, "<br>");
+                    win0.document.write("Inférieur: ", derCar, " _expRac_ ", expRac, " expRes ", expRes, "<br>");
                     newRac = expRac.substring(0, expRac.length - 1);
                     expRac = newRac;
                 }
                 if (expRes > a1) {
-                    document.write("Supérieur : ", expRac, " * i * ", i.toString(), " expRes ", expRes, "<br>");
+                    win0.document.write("Supérieur : ", expRac, " * i * ", i.toString(), " expRes ", expRes, "<br>");
                     newRac = expRac.substring(0, expRac.length - 1);
                     i -= 1;
                     newRac += i.toString();
@@ -42,7 +42,7 @@ function racine2(choix, aSaisi) {
                 }
                 if (expRes === a1) {
                     gOk = false;
-                    document.write("Boucle racine : ", expRes, "<br>");
+                    win0.document.write("Boucle racine : ", expRes, "<br>");
                     return expRes
                 }
                 // document.write("Boucle for : ", " expRes: ", expRes, " Saisie: ", aSaisi, "<br>")
@@ -58,8 +58,4 @@ function racine2(choix, aSaisi) {
 
 }
 
-function explore(aS1, aS2){
-    document.write("Retour Puissance : ", aS1, "  ", aS2, "<br>")
-    return aS1
-}
 
