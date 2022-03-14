@@ -39,7 +39,7 @@
     let retourPuis = ""
     function expose(){
         let prise1 = prompt("Entrez un 1er nombre");
-        while (prise1 === "0" || prise1 === "") {
+        while (prise1 === "0" || prise1 === ""){
             prise1 = prompt("Entrez un 1er nombre");
         }
         let prise2 = prompt("Entrez un 2ème nombre");
@@ -49,7 +49,7 @@
         let wiNew1 = window.open();
         wiNew1.document.write("Un : ", prise1, " Deux : ", prise2, "<br>")
         retourPuis = explore(prise1, prise2)
-        wiNew1.document.write("Retour Puissance : ", retourPuis.toString(), "<br>")
+        wiNew1.document.write("Retour Puissance : ", "<br>", retourPuis.toString(), "<br>")
     }
 </script>
 <p>________________________________________________</p>
