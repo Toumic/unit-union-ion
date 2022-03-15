@@ -1,3 +1,0 @@
-# Bienvenue dans UUI!
-
-© Toumic
