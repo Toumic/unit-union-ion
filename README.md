@@ -11,6 +11,7 @@ L'occasion de voir à quel niveau le comptage machine rompt, selon les paramètr
 Il est normal d'y retrouver le point de rupture qui sans être interrompu, il resterait perpétuel.<br>
 Les différences des nombres détaillés, qu'ils soient (_inférieurs ou supérieurs ou égaux_) et indices de sélection.<br>
 #### 3. Comprendre les nombres à travers la stratification hexanumérique
+#### 4. Simple développement de la gamme diatonique naturelle
 
 
 

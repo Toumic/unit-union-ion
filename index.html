@@ -17,17 +17,17 @@
  - Le résultat réel attendu est absent, il semble tronqué.</p>
 <button onclick="transit();">Racine carrée</button>
 <script>
-    let retourCarre = ""
+    let retourCarre = "";
     function transit() {
         let aSaisi = prompt("Entrez un nombre");
         while (aSaisi === "0" || aSaisi === "") {
             aSaisi = prompt("Entrez un nombre");
         }
         let wiNew = window.open();
-        wiNew.document.write("Origine : ", aSaisi, "<br>")
-        parseFloat(aSaisi)
-        retourCarre = racine2(aSaisi)
-        wiNew.document.write("Retour Carré : ", retourCarre.toString(), "<br>")
+        wiNew.document.write("Origine : ", aSaisi, "<br>");
+        parseFloat(aSaisi);
+        retourCarre = racine2(aSaisi);
+        wiNew.document.write("Retour Carré : ", retourCarre.toString(), "<br>");
     }
 </script>
 <hr>
@@ -36,7 +36,7 @@
 - Le résultat réel attendu est absent, il semble tronqué.</p>
 <button onclick="expose();">Puissance relative</button>
 <script>
-    let retourPuis = ""
+    let retourPuis = "";
     function expose(){
         let prise1 = prompt("Entrez un 1er nombre");
         while (prise1 === "0" || prise1 === ""){
@@ -47,9 +47,9 @@
             prise2 = prompt("Entrez un 2ème nombre");
         }
         let wiNew1 = window.open();
-        wiNew1.document.write("Un : ", prise1, " Deux : ", prise2, "<br>")
-        retourPuis = explore(prise1, prise2)
-        wiNew1.document.write("Retour Puissance : ", "<br>", retourPuis.toString(), "<br>")
+        wiNew1.document.write("Un : ", prise1, " Deux : ", prise2, "<br>");
+        retourPuis = explore(prise1, prise2);
+        wiNew1.document.write("Retour Puissance : ", "<br>", retourPuis.toString(), "<br>");
     }
 </script>
 <hr>
