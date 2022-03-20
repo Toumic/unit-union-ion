@@ -58,7 +58,6 @@ function explore(aS1, aS2) {
         for (let p = 0; p < entString.length; p++) {
             if ("." === entString[p]) {
                 nbrDec = true;
-                // win1.document.write(". FOR dec : ", nbrDec.toString(), "<br>")
             }
         }
         if (nbrDec === false) entString += ".";

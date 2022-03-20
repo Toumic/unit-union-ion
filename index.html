@@ -5,6 +5,7 @@
     <title>Unit Union Ion</title>
     <script type="text/javascript" src="jss/racine.js"></script>
     <script type="text/javascript" src="jss/explose.js"></script>
+    <script type="text/javascript" src="jss/hexa.js"></script>
 </head>
 <body>
 <H1>Union ions premiers</H1>
@@ -54,7 +55,23 @@
 </script>
 <hr>
 <H2>Le typage numérique basique :</H2>
-<p>Distribution des genres numériques selon le modèle hexanumérique.</p>
+<p>Distribution des genres numériques selon le modèle hexanumérique.<br>
+Désignation du nombre qui pourrait être premier multiple commun.</p>
+<button onclick="commun();">Nombres typiques</button>
+<script>
+    let envoiPulse = ""
+    function commun(){
+        let saisie = prompt("Entrez un nombre");
+        while (saisie === "0" || saisie === ""){
+            saisie = prompt("Entrez un nombre");
+        }
+        let wiNew = window.open();
+        // wiNew.document.write("A saisie : ", saisie, "<br>");
+        envoiPulse = typage(saisie);
+        wiNew.document.write("Retour type du nombre : ", envoiPulse.toString(), "<br>");
+    }
+</script>
+<div id="image-x"></div>
 <hr>
 </body>
 </html>
