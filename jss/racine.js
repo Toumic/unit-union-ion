@@ -42,14 +42,14 @@ function racine2(aSaisi) {
                 if (expRes === a1) {
                     gOk = false;
                     // win0.document.write("Boucle racine : ", expRes, "<br>");
-                    return [" expRes ", expRes, " expRac ", expRac]
+                    return [" expRes ", expRes, "<br>", " expRac ", expRac]
                 }
                 // document.write("Boucle for : ", " expRes: ", expRes, " Saisie: ", aSaisi, "<br>")
                 // if (nBr === 2) gOk = false;
             }
             if (nBr === 50) {
                 gOk = false;
-                return ["GOK false : ", expRes, " Racine : ", expRac]
+                return ["GOK false : ", expRes, "<br>", " Racine : ", expRac]
             }  // Pour éviter les boucles sans fins
             // document.write("While nBr : __ ", a1.toString(), "  ", nBr.toString(), "<br>")
         }

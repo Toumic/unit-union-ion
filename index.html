@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Unit Union Ion</title>
+    <link href="css/index.css" rel="stylesheet">
     <script type="text/javascript" src="jss/racine.js"></script>
     <script type="text/javascript" src="jss/explose.js"></script>
     <script type="text/javascript" src="jss/hexa.js"></script>
@@ -13,10 +14,12 @@
     Applications connues ou inconnues élevées en <b>Javascript</b>.<br>
     <i>Les fonctions venues de l'intérieur</i><br></p>
 <hr>
-<H2>La racine carrée d'un nombre :</H2>
-<p> Incrémenter l'exposant produisant le nombre juste.<br>
- - Le résultat réel attendu est absent, il semble tronqué.</p>
-<button onclick="transit();">Racine carrée</button>
+<div class="une">
+    <H2>La racine carrée d'un nombre :</H2>
+    <p> Incrémenter l'exposant produisant le nombre juste.<br>
+     - Le résultat réel attendu est absent, il semble tronqué.</p>
+    <button id="bout1" onclick="transit();">Racine carrée</button>
+</div>
 <script>
     let retourCarre = "";
     function transit() {
@@ -32,10 +35,12 @@
     }
 </script>
 <hr>
-<H2>La puissance relative :</H2>
-<p> Exponentiation d'un nombre pour égaler un autre nombre.<br>
-- Le résultat réel attendu est absent, il semble tronqué.</p>
-<button onclick="expose();">Puissance relative</button>
+<div class="deux">
+    <H2>La puissance relative :</H2>
+    <p> Exponentiation d'un nombre pour égaler un autre nombre.<br>
+    - Le résultat réel attendu est absent, il semble tronqué.</p>
+    <button id="bout2" onclick="expose();">Puissance relative</button>
+</div>
 <script>
     let retourPuis = "";
     function expose(){
@@ -51,13 +56,15 @@
         wiNew1.document.write("Un : ", prise1, " Deux : ", prise2, "<br>");
         retourPuis = explore(prise1, prise2);
         wiNew1.document.write("Retour Puissance : ", "<br>", retourPuis.toString(), "<br>");
-    }
+        }
 </script>
 <hr>
-<H2>Le typage numérique basique :</H2>
-<p> Distribution des genres numériques selon le modèle hexanumérique.<br>
-Désignation du nombre qui pourrait être premier multiple commun.</p>
-<button onclick="commun();">Nombres typiques</button>
+<div class="trois">
+    <H2>Le typage numérique basique :</H2>
+    <p> Distribution des genres numériques selon le modèle hexanumérique.<br>
+    Désignation du nombre qui pourrait être premier multiple commun.</p>
+    <button id="bout3" onclick="commun();">Nombres typiques</button>
+</div>
 <script>
     let envoiPulse = ""
     function commun(){

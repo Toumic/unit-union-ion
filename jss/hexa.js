@@ -15,5 +15,5 @@ function typage (nombre){
     ]
     let typo = tableTypes[reste]
     // wiNew.document.write("Un ", nbr.toString(), "   ", reste.toString(), "<br>")
-    return ["Nombre origine : ", nombre, ".  Typage : ... ", typo]
+    return ["Nombre origine : ", nombre, "<br>", ".  Typage : ... ", typo]
 }

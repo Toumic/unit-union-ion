@@ -66,7 +66,7 @@ function explore(aS1, aS2) {
             for (let y = 1; y < 10; y++) {
                 entString += y.toString();
                 let resPlus = aN1 ** parseFloat(entString)
-                retour = [aN1, " Exp ", entString, " Res ", resPlus, " aN2 ", aN2]
+                retour = [aN1, " Exp ", entString, "<br>", " Res ", resPlus, " aN2 ", aN2]
                 // win1.document.write("<br><br>", "RES PLUS : ", resPlus.toString(), "<br>");
                 //
                 if (resPlus < aS2) {
