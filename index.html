@@ -15,10 +15,10 @@
     <i>Les fonctions venues de l'intérieur</i><br></p>
 <hr>
 <div class="une">
-    <H2>La racine carrée d'un nombre :</H2>
+    <H2>La racine carrée d'un nombre</H2>
     <p> Incrémenter l'exposant produisant le nombre juste.<br>
      - Le résultat réel attendu est absent, il semble tronqué.</p>
-    <button id="bout1" onclick="transit();">Racine carrée</button>
+    <button id="but1" onclick="transit();">Racine carrée</button>
 </div>
 <script>
     let retourCarre = "";
@@ -28,7 +28,7 @@
             aSaisi = prompt("Entrez un nombre");
         }
         let wiNew = window.open();
-        wiNew.document.write("Origine : ", aSaisi, "<br>");
+        wiNew.document.write("Nombre Original : ", aSaisi, "<br>");
         parseFloat(aSaisi);
         retourCarre = racine2(aSaisi);
         wiNew.document.write("Retour Carré : ", retourCarre.toString(), "<br>");
@@ -36,10 +36,10 @@
 </script>
 <hr>
 <div class="deux">
-    <H2>La puissance relative :</H2>
+    <H2>La puissance relative</H2>
     <p> Exponentiation d'un nombre pour égaler un autre nombre.<br>
     - Le résultat réel attendu est absent, il semble tronqué.</p>
-    <button id="bout2" onclick="expose();">Puissance relative</button>
+    <button id="but2" onclick="expose();">Puissance relative</button>
 </div>
 <script>
     let retourPuis = "";
@@ -60,10 +60,10 @@
 </script>
 <hr>
 <div class="trois">
-    <H2>Le typage numérique basique :</H2>
+    <H2>Le typage numérique basique</H2>
     <p> Distribution des genres numériques selon le modèle hexanumérique.<br>
     Désignation du nombre qui pourrait être premier multiple commun.</p>
-    <button id="bout3" onclick="commun();">Nombres typiques</button>
+    <button id="but3" onclick="commun();">Nombres typiques</button>
 </div>
 <script>
     let envoiPulse = ""
@@ -78,6 +78,7 @@
         wiNew.document.write("Retour type du nombre : ", envoiPulse.toString(), "<br>");
     }
 </script>
+<iframe src="img/agenph_2_1.png" width="500" height="200"></iframe><br>
 <a href="https://www.cabviva.fr/agenph-2">..........: Lien vers cabviva - </a>
 <hr>
 </body>

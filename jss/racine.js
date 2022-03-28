@@ -4,7 +4,7 @@ function racine2(aSaisi) {
     // let win0 = window.open()
     let a1 = parseFloat(aSaisi);
     // Trouver le nombre entier de l'exposant
-    let expE = 1;
+    let expE = 1, retour = "";
     while ((expE * expE) < a1){
         expE += 1;
     }
@@ -42,22 +42,22 @@ function racine2(aSaisi) {
                 if (expRes === a1) {
                     gOk = false;
                     // win0.document.write("Boucle racine : ", expRes, "<br>");
-                    return [" expRes ", expRes, "<br>", " expRac ", expRac]
+                    retour = [" Origine : ... ", expRes, "<br>", " Racine : ... ", expRac]
                 }
                 // document.write("Boucle for : ", " expRes: ", expRes, " Saisie: ", aSaisi, "<br>")
                 // if (nBr === 2) gOk = false;
             }
             if (nBr === 50) {
                 gOk = false;
-                return ["GOK false : ", expRes, "<br>", " Racine : ", expRac]
+                retour = ["GOK false : ", expRes, "<br>", " Racine proche : ", expRac]
             }  // Pour éviter les boucles sans fins
             // document.write("While nBr : __ ", a1.toString(), "  ", nBr.toString(), "<br>")
         }
     }  // Racine carrée trouvée
     else {
-        return expE;
+        retour = expE;
     }
-
+    return retour
 }
 
 
