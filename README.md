@@ -15,6 +15,9 @@ Les différences des nombres détaillés, qu'ils soient (_inférieurs ou supéri
 En prenant le reste de la division d'un nombre par six, on obtient le type de ce nombre.<br>
 De plus une image apparait classant les nombres de 1 à 194, pour une meilleure compréhension.<br>
 #### 4. Simple développement de la gamme diatonique naturelle
+`diatonie.js`<br>
+Découverte du traitement algorithmique qui permet d'obtenir les modulations diatoniques.<br>
+Résultat rangé ayant pour clé la tonique et la formulation des tonalités pour valeurs.<br>
 
 
 

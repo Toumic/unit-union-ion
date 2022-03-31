@@ -7,6 +7,7 @@
     <script type="text/javascript" src="jss/racine.js"></script>
     <script type="text/javascript" src="jss/explose.js"></script>
     <script type="text/javascript" src="jss/hexa.js"></script>
+    <script type="text/javascript" src="jss/diatonie.js"></script>
 </head>
 <body>
 <H1>Union ions premiers</H1>
@@ -18,7 +19,7 @@
     <H2>La racine carrée d'un nombre</H2>
     <p> Incrémenter l'exposant produisant le nombre juste.<br>
      - Le résultat réel attendu est absent, il semble tronqué.</p>
-    <button id="but1" onclick="transit();">Racine carrée</button>
+    <button id="but1" onclick="transit();">Racine carrée</button><br>
 </div>
 <script>
     let retourCarre = "";
@@ -39,7 +40,7 @@
     <H2>La puissance relative</H2>
     <p> Exponentiation d'un nombre pour égaler un autre nombre.<br>
     - Le résultat réel attendu est absent, il semble tronqué.</p>
-    <button id="but2" onclick="expose();">Puissance relative</button>
+    <button id="but2" onclick="expose();">Puissance relative</button><br>
 </div>
 <script>
     let retourPuis = "";
@@ -63,7 +64,7 @@
     <H2>Le typage numérique basique</H2>
     <p> Distribution des genres numériques selon le modèle hexanumérique.<br>
     Désignation du nombre qui pourrait être premier multiple commun.</p>
-    <button id="but3" onclick="commun();">Nombres typiques</button>
+    <button id="but3" onclick="commun();">Nombres typiques</button><br>
 </div>
 <script>
     let envoiPulse = ""
@@ -73,13 +74,32 @@
             saisie = prompt("Entrez un nombre");
         }
         let wiNew = window.open();
-        // wiNew.document.write("A saisie : ", saisie, "<br>");
         envoiPulse = typage(saisie);
         wiNew.document.write("Retour type du nombre : ", envoiPulse.toString(), "<br>");
     }
 </script>
 <iframe src="img/agenph_2_1.png" width="500" height="200"></iframe><br>
-<a href="https://www.cabviva.fr/agenph-2">..........: Lien vers cabviva - </a>
+<hr>
+<div class="quatre">
+    <H2>La forme naturelle </H2>
+    <p> Algorithme standard du développement diatonique de la gamme naturelle.<br>
+    Ou les opérations de base pour comprendre les modulations modales.</p>
+    <button id="but4" onclick="enveloppe();">Diatonique log</button><br>
+</div>
+<script>
+    let retourGamme = "";
+    function enveloppe() {
+        let wiNew = window.open();
+        let indNat = ["C", "D", "E", "F", "G", "A", "B"]; // Notes naturelles diatoniques
+        retourGamme = diatone()
+        if (retourGamme) {
+            for (let i = 0; i < 7; i++) {
+                wiNew.document.write("Gamme Naturelle : ", indNat[i], " : ", retourGamme[indNat[i]], "<br>");
+            }
+        }
+    }
+
+</script>
 <hr>
 </body>
 </html>

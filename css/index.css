@@ -10,6 +10,9 @@
 .trois{
     background-color: skyblue;
 }
+.quatre{
+    background-color: hotpink;
+}
 #but1, #but2, #but3 {
     border: 0;
     line-height: 2.5;
@@ -22,4 +25,15 @@
     background-color: rgba(220, 0, 0, 1);
     box-shadow: -2px -2px 3px rgba(0, 0, 0, .6);
 }
-
+#but4 {
+    border: 0;
+    line-height: 2.5;
+    padding: 0 20px;
+    font-size: 1rem;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 180, 1);
+    box-shadow: -2px -2px 3px rgba(0, 0, 0, .6);
+}
