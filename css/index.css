@@ -13,7 +13,10 @@
 .quatre{
     background-color: hotpink;
 }
-#but1, #but2, #but3 {
+.cinq{
+    background-color: skyblue;
+}
+#but1, #but2, #but3, #but5 {
     border: 0;
     line-height: 2.5;
     padding: 0 20px;

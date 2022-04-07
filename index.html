@@ -8,6 +8,7 @@
     <script type="text/javascript" src="jss/explose.js"></script>
     <script type="text/javascript" src="jss/hexa.js"></script>
     <script type="text/javascript" src="jss/diatonie.js"></script>
+    <script type="text/javascript" src="jss/premier.js"></script>
 </head>
 <body>
 <H1>Union ions premiers</H1>
@@ -99,6 +100,25 @@
         }
     }
 
+</script>
+<hr>
+<div class="cinq">
+    <h2>Nombre premier</h2>
+    <p>Traitement pour répondre à ceci : Est-ce que le nombre est un nombre premier.<br>
+    Un script court utilisant toutes les stratégies connues par l'auteur.</p>
+    <button id="but5" onclick="nombre();">Premier log</button>
+</div>
+<script>
+    let retourPremier = "";
+    function nombre(){
+        let saisie = prompt("Entrez un nombre");
+        while (saisie === "0" || saisie === ""){
+            saisie = prompt("Entrez un nombre");
+        }
+        let wiNew = window.open();
+        retourPremier = origine(saisie);
+        wiNew.document.write("Retour type du nombre : ", retourPremier.toString(), "<br>");
+    }
 </script>
 <hr>
 </body>
