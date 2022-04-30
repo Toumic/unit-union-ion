@@ -23,7 +23,7 @@ function origine(num){
         neo = false;
         // win.document.write('Num carré: ', car.toString(), "<br>");
         if (retour){ retour += "<br>"}
-        retour += "Carré" + car;
+        retour += "Carré: " + car;
     }
     if (di7 * 7 === num) {
         neo = false;
@@ -33,20 +33,24 @@ function origine(num){
     }
 
     if (neo){
-        let qi = 0;
+        let qi = 0, yo = 0, ix = [];
         for (let fw = 5; fw < car; fw += 6){
-            let qui = Math.trunc(num / fw);
-            if (qui * fw === num){
-                qi = num / qui;
-                // win.document.write(' QUI:', qui.toString());
-                retour += "Multiple" + qui;
-                break;
+            yo = fw + 2;
+            ix = [fw, yo];
+            for (let y = 0; y < ix.length; ++y) {
+                let qui = Math.trunc(num / ix[y]);
+                if (qui * ix[y] === num) {
+                    qi = num / qui;
+                    // win.document.write(' QUI:', qui.toString());
+                    retour += "Multiple: " + qui;
+                    break;
+                }
             }
         }
         if (qi === 0)
         {
             // win.document.write('Num premier: ', num.toString());
-            retour = "Premier" + num;
+            retour = "Premier: " + num;
         }
     }
     return retour

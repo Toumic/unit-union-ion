@@ -19,7 +19,7 @@ De plus une image apparait classant les nombres de 1 à 194, pour une meilleure 
 Découverte du traitement algorithmique qui permet d'obtenir les modulations diatoniques.<br>
 Résultat rangé ayant pour clé la tonique et la formulation des tonalités pour valeurs.<br>
 #### 5. Traitement du nombre afin d'en déduire s'il est commun ou entier
-`premier.js`
+`premier.js`<br>
 Plusieurs opérations sont utiles pour connaitre la définition du nombre.<br>
 Savoirs(en base(2,3,4,6), multiple carré, divisible par 7, commun(1,5), premier).<br>
 
