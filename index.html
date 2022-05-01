@@ -112,12 +112,12 @@
     let retourPremier = "";
     function nombre(){
         let saisie = prompt("Entrez un nombre");
-        while (saisie === "0" || saisie === ""){
+        while (saisie === "0" || saisie === "" || saisie === "1"){
             saisie = prompt("Entrez un nombre");
         }
         let wiNew = window.open();
         retourPremier = origine(saisie);
-        wiNew.document.write("Retour type du nombre : ", saisie, ' ', retourPremier.toString(), "<br>");
+        wiNew.document.write("Retour type du nombre : ", saisie, "<br>", retourPremier.toString(), "<br>");
     }
 </script>
 <hr>
