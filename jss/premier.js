@@ -1,7 +1,7 @@
 /*Javascript pour calculer rapidement l'origine d'un nombre*/
 
 function origine(num){
-    let win = window.open();
+    // let win = window.open();
     num = parseInt(num)
     let retour = ""
     let tip = num % 6;
@@ -19,7 +19,7 @@ function origine(num){
                 }
                 else{
                     retour += "Num commun base: " + p1er + "<br>";
-                    win.document.write(' > Num commun base: ', p1er.toString(), "<br>");
+                    // win.document.write(' > Num commun base: ', p1er.toString(), "<br>");
                 }
                 neo = false;
             }
